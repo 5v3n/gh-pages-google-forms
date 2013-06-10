@@ -3,7 +3,41 @@
   </head>
   <body>
     <h1>Works!</h1>
-    <p>Now here is the form. Next: customize this so it seems to work inside the page.</p>
-    <iframe src="https://docs.google.com/forms/d/1lmV9gA8pNNLPiRxsqQMQkpyT0U2Kmzm-8-1OtozMV_c/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+    <p>Now here is the form. Without the iframe from google, we can style it how we like. Next: customize the confirmation page so it seems to work inside the page.</p>
+    <p>
+      <form action="https://docs.google.com/a/makingthingshappen.de/forms/d/1lmV9gA8pNNLPiRxsqQMQkpyT0U2Kmzm-8-1OtozMV_c/formResponse?embedded=true" method="POST" id="ss-form" target="_self" onsubmit="">
+        <ol style="padding-left: 0">
+          <div class="ss-form-question errorbox-good">
+            <div dir="ltr" class="ss-item ss-item-required ss-paragraph-text">
+              <div class="ss-form-entry">
+                <label class="ss-q-item-label" for="entry_1688327066">
+                  <div class="ss-q-title">Wow, you found it - how do you like it?
+                    <label for="itemView.getDomIdToLabel()" aria-label="(Erforderliches Feld)"></label>
+                    <span class="ss-required-asterisk">*</span>
+                  </div>
+                  <div class="ss-q-help ss-secondary-text" dir="ltr"></div>
+                </label>
+                <textarea name="entry.1688327066" rows="8" cols="0" class="ss-q-long" id="entry_1688327066" dir="auto" aria-required="true"></textarea>
+              </div>
+            </div>
+          </div> 
+          <div class="ss-form-question errorbox-good">
+          <div dir="ltr" class="ss-item  ss-checkbox"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_172984325"><div class="ss-q-title">Additionally this is a minor question, you don't have to answer. Did you get this?
+          </div>
+          <div class="ss-q-help ss-secondary-text" dir="ltr"></div>
+        </label>
+
+        <ul class="ss-choices"><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1215774961" value="Yes" id="group_1215774961_1" class="ss-q-checkbox"></span>
+        <span class="ss-choice-label">Yes</span>
+        </label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1215774961" value="No" id="group_1215774961_2" class="ss-q-checkbox"></span>
+        <span class="ss-choice-label">No</span>
+        </label></li></ul>
+        </div></div></div>
+        <input type="hidden" name="draftResponse" value="[]">
+        <input type="hidden" name="pageHistory" value="0">
+      <div class="ss-item ss-navigate"><div class="ss-form-entry" dir="ltr">
+      <input type="submit" name="submit" value="Senden" id="ss-submit">
+      <div class="ss-secondary-text">Geben Sie Passwörter niemals über Google Formulare weiter.</div></div></div></ol></form>
+  </p>
   </body>
 </html>
