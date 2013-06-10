@@ -5,7 +5,11 @@
     <h1>Works!</h1>
     <p>Now here is the form. Without the iframe from google, we can style it how we like. Next: customize the confirmation page so it seems to work inside the page.</p>
     <p>
-      <form action="https://docs.google.com/a/makingthingshappen.de/forms/d/1lmV9gA8pNNLPiRxsqQMQkpyT0U2Kmzm-8-1OtozMV_c/formResponse?embedded=true" method="POST" id="ss-form" target="_self" onsubmit="">
+      <script type="text/javascript">var submitted=false;</script>
+      <iframe name="hidden_iframe" id="hidden_iframe"
+      style="display:none;" onload="if(submitted)
+      {window.location='thankyou.html';}"></iframe>
+      <form action="https://docs.google.com/a/makingthingshappen.de/forms/d/1lmV9gA8pNNLPiRxsqQMQkpyT0U2Kmzm-8-1OtozMV_c/formResponse?embedded=true" method="post" target="hidden_iframe" onsubmit="submitted=true;">
         <ol style="padding-left: 0">
           <div class="ss-form-question errorbox-good">
             <div dir="ltr" class="ss-item ss-item-required ss-paragraph-text">
